@@ -62,7 +62,7 @@ public class Menu extends Parametres{
 
         switch (option2) {
 
-            case 'A':  a = 1;
+            case 'A':  a = 1;//Condition pour relancer même mode
 
                 break;
             case 'B':
@@ -70,16 +70,14 @@ public class Menu extends Parametres{
                 choix.startMenu();
             case 'C':
                 System.out.println("\n \n \n ");
-
-
-
                 break;
             default:
-                System.out.println("Entrer invalide ! Essayer encore");
+                System.out.println("Entrer invalide !");
 
-                System.out.println("\n\n\n\n\n\n\n");
 
         }
+        System.out.println("\n \n \n ");
+
         return a;
     }
 
