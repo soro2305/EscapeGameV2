@@ -11,6 +11,8 @@ public class Challenger extends Mode{
         Challenger obj = new Challenger();
         Menu obj1 = new Menu();
         List<String> list = new ArrayList();
+        List<String> lC = new ArrayList();
+
         String sP = "0" ; String sE;
         int  m = 3; int a = 0; int i;int j;
 
