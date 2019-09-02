@@ -6,7 +6,8 @@ public class Menu extends Parametres{
 
     public void startMenu (){
             //Initialisation des instances
-        Menu choix = new Menu();
+        Challenger choix = new Challenger();
+        Deffenseur choix1 = new Deffenseur();
         Scanner input = new Scanner(System.in);
             char option = '\0';
 
@@ -28,13 +29,13 @@ public class Menu extends Parametres{
                     choix.attaque();
                     break;
                 case 'B'://====== Choix B envoie classe Defensseur =======
-                    choix.defender();
+                    choix1.defender();
                     break;
                 case 'C':
-                    choix.duo();
+                   // choix.duo();
                     break;
                 case 'D':
-                    choix.settings();
+                   //choix.settings();
                     break;
                 case 'E':
                     System.out.println("Vous avez choisi de Quitter");
@@ -49,8 +50,10 @@ public class Menu extends Parametres{
         }
 
     public int endMenu (){
+        Scanner input = new Scanner(System.in);
         Menu choix = new Menu();
         int a = 0;
+
         //Menu de fin
 
         System.out.println("Entre une options en tappant la lettre corespondante");
